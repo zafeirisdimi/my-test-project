@@ -1,5 +1,13 @@
 name: Firstworkflow
-on: push
+on: 
+  push:
+   branches:
+    - develop
+    - master
+  pull_request_target:
+    branches: 
+    - develop
+    - master
 jobs:
   job1: 
     name: First job
